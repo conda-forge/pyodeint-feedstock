@@ -1,5 +1,5 @@
 boost:
-- 1.66.0
+- 1.67.0
 c_compiler:
 - toolchain_c
 cxx_compiler:
@@ -10,7 +10,7 @@ pin_run_as_build:
   boost:
     max_pin: x.x.x
   python:
-    max_pin: x.x
     min_pin: x.x
+    max_pin: x.x
 python:
 - '3.5'
