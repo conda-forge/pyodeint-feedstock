@@ -1,6 +1,6 @@
 {% set name = "pyodeint" %}
-{% set version = "0.9.5" %}
-{% set sha256 = "fe3e4e91aaa5f8354d09de260b565a3defe90d6989b2ac952f65794d1a9bb995" %}
+{% set version = "0.10.0" %}
+{% set sha256 = "3a3a209fbc2117b63d0b7637822cfc1fce1ade50b63ff5e3c832027c40ce2090" %}
 
 package:
   name: {{ name|lower }}
