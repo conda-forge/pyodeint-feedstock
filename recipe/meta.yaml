@@ -1,6 +1,6 @@
 {% set name = "pyodeint" %}
-{% set version = "0.10.2" %}
-{% set sha256 = "b511f65aea3d59b51acf83172a6c4a38be0b216b99aa4fbee83212a55a976f18" %}
+{% set version = "0.10.4" %}
+{% set sha256 = "11b7028323d03b5864b7600fbd14c87903a62d8826fbe8ea8fd0afbccadc1044" %}
 
 package:
   name: {{ name|lower }}
@@ -12,8 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
-  skip: true        # [win and not py>=35]
+  number: 0
+  skip: true  # [win and not py>=35]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -42,7 +42,7 @@ about:
   home: https://github.com/bjodah/pyodeint
   license: BSD 2-Clause
   license_file: LICENSE
-  summary: 'Python wrapper around odeint (from the boost C++ library)'
+  summary: Python wrapper around odeint (from the boost C++ library)
   doc_url: https://bjodah.github.io/{{ name }}/latest
 
 extra:
