@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 5
+  number: 6
   skip: true  # [win and not py>=35]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -22,6 +22,7 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - python
+    - cython
     - setuptools
     - numpy
     - boost
