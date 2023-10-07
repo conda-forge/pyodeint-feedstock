@@ -25,7 +25,7 @@ requirements:
     - cython
     - setuptools
     - numpy
-    - libboost-python-devel
+    - libboost-headers
     - pip
   run:
     - python
