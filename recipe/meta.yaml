@@ -1,6 +1,6 @@
 {% set name = "pyodeint" %}
-{% set version = "0.10.4" %}
-{% set sha256 = "11b7028323d03b5864b7600fbd14c87903a62d8826fbe8ea8fd0afbccadc1044" %}
+{% set version = "0.10.5" %}
+{% set sha256 = "d881285583879a7fd51492bcd11b86f460821d5e6b5fd935f6b5891b50cb9d77" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 7
+  number: 0
   skip: true  # [win and not py>=35]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
