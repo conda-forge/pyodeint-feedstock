@@ -30,6 +30,7 @@ requirements:
     - pip
   run:
     - python
+    - setuptools  # pkg_resources used
 
 test:
   imports:
