@@ -1,6 +1,6 @@
 {% set name = "pyodeint" %}
-{% set version = "0.10.7" %}
-{% set sha256 = "02e63f4e5516e6890979bef3a149690b8d67b6d20cad25a1337fa57f17486837" %}
+{% set version = "0.10.8" %}
+{% set sha256 = "87533fcf79da93690dbca97d0e08c7dcbb586b8fb01c3e0022ff85f9aa0b465a" %}
 
 package:
   name: {{ name|lower }}
@@ -8,11 +8,11 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 3
+  number: 4
   skip: true  # [win and not py>=35]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
